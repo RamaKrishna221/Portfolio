@@ -1,9 +1,22 @@
 /* Additional responsive tweaks */
+@media (max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:.6rem}
+  .photo-frame{width:220px;height:220px}
+  .contact-grid{grid-template-columns:1fr;gap:.6rem}
+  .cta{flex-direction:column;align-items:flex-start}
+  .nav-toggle{display:inline-block}
+  .nav-links{display:none}
+  .nav-links.open{display:flex;flex-direction:column;position:absolute;top:calc(100% + .4rem);right:1rem;background:rgba(11,18,32,0.96);padding:.7rem;border:1px solid rgba(255,255,255,0.08);border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,0.25)}
+  .nav-links.open li{width:100%}
+}
+
 @media (max-width:600px){
-  .container{padding:1rem}
-  .name{font-size:1.5rem}
-  .photo-frame{width:180px;height:180px}
-  .hero{padding-top:2rem;padding-bottom:2rem}
-  .nav{padding:0.5rem 1rem}
-  .footer-inner{flex-direction:column;gap:.5rem}
+  .container{padding:.9rem}
+  .name{font-size:1.4rem}
+  .photo-frame{width:170px;height:170px}
+  .hero{padding-top:1rem;padding-bottom:1rem;min-height:auto}
+  .nav{padding:.5rem .9rem}
+  .footer-inner{flex-direction:column;align-items:flex-start;gap:.4rem}
+  .socials a{margin-left:0;margin-right:.75rem}
+  .cert-edu-grid,.projects-grid,.skills-grid,.counters{gap:.6rem}
 }

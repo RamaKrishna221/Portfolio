@@ -75,6 +75,31 @@ document.addEventListener('DOMContentLoaded',()=>{
     form.reset();
   });
 
+  // resume download support
+  document.querySelectorAll('a.download-resume').forEach(link=>{
+    link.addEventListener('click',async e=>{
+      const href=link.getAttribute('href');
+      if(!href) return;
+      e.preventDefault();
+      try{
+        const response=await fetch(href);
+        if(!response.ok) throw new Error('Unable to download resume');
+        const blob=await response.blob();
+        const url=URL.createObjectURL(blob);
+        const temp=document.createElement('a');
+        temp.href=url;
+        temp.download=link.getAttribute('download')||'resume.pdf';
+        document.body.appendChild(temp);
+        temp.click();
+        temp.remove();
+        URL.revokeObjectURL(url);
+      }catch(err){
+        console.error(err);
+        window.location.href=href;
+      }
+    });
+  });
+
   // custom cursor
   const cursor=document.createElement('div');cursor.style.cssText='width:14px;height:14px;border-radius:50%;position:fixed;pointer-events:none;z-index:9999;border:2px solid rgba(255,255,255,0.6);transform:translate(-50%,-50%);transition:transform .12s ease,background .12s ease';document.body.appendChild(cursor);
   document.addEventListener('mousemove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'});
