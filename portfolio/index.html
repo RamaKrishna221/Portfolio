@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Ramakrishna Vutakonda is a software engineer building scalable full-stack applications with Angular, ASP.NET Core, and SQL Server." />
+    <meta name="author" content="Ramakrishna Vutakonda" />
+    <meta name="keywords" content="Ramakrishna Vutakonda, software engineer, full stack developer, Angular, ASP.NET Core, portfolio" />
+    <meta name="theme-color" content="#0b1026" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="Ramakrishna Vutakonda — Portfolio" />
+    <meta property="og:description" content="Software Engineer | Full Stack Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/profile.jpg" />
+    <title>Ramakrishna Vutakonda — Portfolio</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/favicon.svg" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div id="loader" class="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <header class="nav-container">
+      <nav class="nav">
+        <a class="logo" href="#">Ramakrishna VutakondaBijje</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <h1 class="name">Ramakrishna Vutakonda</h1>
+            <h2 class="role">Software Engineer | Full Stack Developer</h2>
+            <p class="experience">3.3+ Years Experience</p>
+            <p class="intro">Passionate developer building scalable enterprise applications. Strong problem-solver and quick learner.</p>
+            <div class="cta">
+              <a href="assets/resume.pdf" download class="btn primary">Download Resume</a>
+              <a href="tel:+918790557506" class="btn ghost">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-photo">
+            <div class="photo-frame">
+              <img src="images/profile.jpg" alt="Portrait of Ramakrishna Vutakonda" />
+            </div>
+          </div>
+        </div>
+        <canvas id="particles"></canvas>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h3>About Me</h3>
+          <p>I am a driven Full Stack Developer who transforms business requirements into clean, high-performance software. Over the last 3+ years I have built customer-facing dashboards, internal tools, and enterprise systems using Angular, ASP.NET Core, Razor Pages, and SQL Server.</p>
+          <p>My work focuses on delivering reliable solutions with strong UI/UX, solid backend architecture, and efficient database design. I thrive in agile teams, contribute to code standards, and mentor colleagues while maintaining quality through unit testing and code reviews.</p>
+          <ul>
+            <li>Designing scalable web applications with responsive, accessible interfaces</li>
+            <li>Optimizing REST APIs, data models, and performance for enterprise workloads</li>
+            <li>Collaborating with stakeholders, designers, and QA for faster delivery</li>
+            <li>Learning new cloud and tooling workflows to keep projects future-ready</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="skills" aria-labelledby="skills-heading">
+        <div class="container">
+          <h3 id="skills-heading">Skills</h3>
+          <p class="visually-hidden">Animated skill progress bars — content conveys proficiency percentages.</p>
+          <div class="skills-grid">
+            <div class="skill-card gradient-border">
+              <h4>Frontend</h4>
+              <div class="skill-list">
+                <label class="skill">HTML5 <span class="skill-percent">95%</span></label>
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                  <div class="progress-bar" data-value="95"></div>
+                </div>
+
+                <label class="skill">CSS3 <span class="skill-percent">92%</span></label>
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                  <div class="progress-bar" data-value="92"></div>
+                </div>
+
+                <label class="skill">JavaScript <span class="skill-percent">88%</span></label>
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                  <div class="progress-bar" data-value="88"></div>
+                </div>
+
+                <label class="skill">TypeScript <span class="skill-percent">85%</span></label>
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                  <div class="progress-bar" data-value="85"></div>
+                </div>
+
+                <label class="skill">Angular <span class="skill-percent">84%</span></label>
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                  <div class="progress-bar" data-value="84"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-card gradient-border">
+              <h4>Backend</h4>
+              <div class="skill-list">
+                <label class="skill">ASP.NET Core <span class="skill-percent">88%</span></label>
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                  <div class="progress-bar" data-value="88"></div>
+                </div>
+
+                <label class="skill">.NET 6+ <span class="skill-percent">86%</span></label>
+                <div class="progress"><div class="progress-bar" data-value="86"></div></div>
+
+                <label class="skill">Entity Framework Core <span class="skill-percent">82%</span></label>
+                <div class="progress"><div class="progress-bar" data-value="82"></div></div>
+
+                <label class="skill">LINQ <span class="skill-percent">80%</span></label>
+                <div class="progress"><div class="progress-bar" data-value="80"></div></div>
+              </div>
+            </div>
+
+            <div class="skill-card gradient-border">
+              <h4>Database</h4>
+              <div class="skill-list">
+                <label class="skill">SQL Server <span class="skill-percent">88%</span></label>
+                <div class="progress"><div class="progress-bar" data-value="88"></div></div>
+                <label class="skill">Stored Procedures <span class="skill-percent">82%</span></label>
+                <div class="progress"><div class="progress-bar" data-value="82"></div></div>
+              </div>
+            </div>
+
+            <div class="skill-card gradient-border">
+              <h4>Cloud</h4>
+              <div class="skill-list">
+                <label class="skill">Azure <span class="skill-percent">78%</span></label>
+                <div class="progress"><div class="progress-bar" data-value="78"></div></div>
+                <label class="skill">Azure App Services <span class="skill-percent">75%</span></label>
+                <div class="progress"><div class="progress-bar" data-value="75"></div></div>
+              </div>
+            </div>
+
+            <div class="skill-card gradient-border">
+              <h4>Tools & AI</h4>
+              <div class="skill-list">
+                <label class="skill">Git • GitHub <span class="skill-percent">90%</span></label>
+                <div class="progress"><div class="progress-bar" data-value="90"></div></div>
+                <label class="skill">VS Code • Postman <span class="skill-percent">86%</span></label>
+                <div class="progress"><div class="progress-bar" data-value="86"></div></div>
+                <label class="skill">AI Tools <span class="skill-percent">72%</span></label>
+                <div class="progress"><div class="progress-bar" data-value="72"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <div class="container">
+          <h3>Experience</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="period">May 2023 - Present</span>
+              <h4>Capgemini — Software Engineer</h4>
+              <ul>
+                <li>Angular Development</li>
+                <li>REST API Development</li>
+                <li>.NET Core</li>
+                <li>Performance Optimization</li>
+                <li>Code Reviews</li>
+                <li>Agile Development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="container">
+          <h3>Projects</h3>
+          <div class="projects-grid">
+            <article class="project-card">
+              <img src="https://ibrinfotech.b-cdn.net/uploads/Inventory-1-compressed.jpg" alt="Inventory Management System" />
+              <div class="project-body">
+                <h4>Inventory Management System</h4>
+                <p>Inventory, Purchase Orders, Sales Orders, Shipment Tracking with responsive UI.</p>
+                <p class="tech">Angular • .NET Core • TypeScript • C# • SQL Server</p>
+                <div class="project-actions">
+                  <a class="btn" href="#">GitHub</a>
+                  <a class="btn ghost" href="#">Live Demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img src="https://www.collidu.com/media/catalog/product/img1/4/6/467e6ee14ec116cd2e1a716a42d4b30b2cab255dad83bc4473242e00f3b2e7db/erp-slide1.png" alt="Enterprise Resource Planning (ERP)" />
+              <div class="project-body">
+                <h4>Enterprise Resource Planning (ERP)</h4>
+                <p>Modules: CRM, Inventory, Accounts, HR, Sales, Purchase.</p>
+                <p class="tech">Angular • .NET Core • SQL Server</p>
+                <div class="project-actions">
+                  <a class="btn" href="#">GitHub</a>
+                  <a class="btn ghost" href="#">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="cert-edu" class="cert-edu">
+        <div class="container cert-edu-grid">
+          <div class="cert-edu-card">
+            <h3>Certifications</h3>
+            <ul>
+              <li>LinkedIn Learning (20+ Courses)</li>
+              <li>Udemy (10+ Courses)</li>
+              <li>HackerRank Python ★★★★★</li>
+              <li>HackerRank SQL ★★★★★</li>
+            </ul>
+          </div>
+          <div class="cert-edu-card">
+            <h3>Education</h3>
+            <p>B.Tech — Computer Science & Engineering — GATES Institute of Technology</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements" class="achievements">
+        <div class="container counters">
+          <div class="counter">
+            <span data-target="3.3">0</span>
+            <p>Years Experience</p>
+          </div>
+          <div class="counter">
+            <span data-target="20">0</span>
+            <p>Certifications</p>
+          </div>
+          <div class="counter">
+            <span data-target="2">0</span>
+            <p>Enterprise Projects</p>
+          </div>
+          <div class="counter">
+            <span data-target="15">0</span>
+            <p>Technologies</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container contact-grid">
+          <div class="contact-form">
+            <h3>Contact Me</h3>
+            <form id="contactForm" novalidate>
+              <label for="name">Name</label>
+              <input id="name" name="name" required />
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" />
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <button type="submit" class="btn primary">Send Message</button>
+            </form>
+          </div>
+          <aside class="contact-info">
+            <h4>Get In Touch</h4>
+            <p>Email: <a href="mailto:vutakondaramakrishna@gmail.com">vutakondaramakrishna@gmail.com</a></p>
+            <p>Phone: <a href="tel:+918790557506">+91 87905 57506</a></p>
+            <p>LinkedIn: <a href="#">linkedin.com/in/ramakrishna</a></p>
+            <p>GitHub: <a href="#">github.com/ramakrishna</a></p>
+            <p>Location: Bangalore, India</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Ramakrishna Vutakonda. All rights reserved.</p>
+        <div class="socials">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+        </div>
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+      </div>
+    </footer>
+
+    <script src="js/typing.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

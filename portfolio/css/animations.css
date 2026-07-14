@@ -1,0 +1,19 @@
+/* Animations and keyframes for the portfolio */
+@keyframes floaty {
+  0%{transform:translateY(0)}
+  50%{transform:translateY(-8px)}
+  100%{transform:translateY(0)}
+}
+
+.hero-photo .photo-frame{animation:floaty 6s ease-in-out infinite}
+
+/* Reveal animations */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.reveal.active{opacity:1;transform:none}
+
+/* Button hover */
+.btn{transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(16,24,40,0.35)}
+
+/* Typing cursor (used by typing.js) */
+.typing{border-right:2px solid rgba(255,255,255,0.8);padding-right:.25rem}
